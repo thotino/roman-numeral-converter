@@ -34,6 +34,9 @@ const convertToRomanNumerals = ({ number }) => {
   }
 }
 
+/**
+ * Export the function
+ */
 module.exports = {
   convertToRomanNumerals
 }

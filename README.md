@@ -1,6 +1,8 @@
 # ROMAN-NUMERAL-CONVERTER
 Welcome to the roman numeral converter backend module!
+
 This module aims to:
+
 * provide a server that helps to convert a number to roman numerals
  
 # INSTALL
@@ -34,9 +36,15 @@ docker run -p 3000:3000 server
 ## UNIT TESTS
 To run the unit tests, use the following command :
 ```sh
-yarn test
+yarn test:unit
 ```
 This will the conversion to the roman numerals.
+
+## END2END TESTS
+To run the e2e tests, use this command :
+```sh
+yarn test:e2e
+```
 
 ## TESTING THE SERVER
 Use the following cURL command to test the API response.

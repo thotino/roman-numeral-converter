@@ -1,3 +1,7 @@
+'use strict'
+/**
+ * Import the service
+ */
 const service = require('../services/convertToRomanNumerals')
 
 /**
@@ -11,6 +15,9 @@ const controller = (req, res) => {
   res.send({ result: service.convertToRomanNumerals({ number: numberToConvert }) })
 }
 
+/**
+ * Export the controller
+ */
 module.exports = {
   controller
 }
