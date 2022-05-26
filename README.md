@@ -29,10 +29,19 @@ This server will use the port 3000.
 docker build -t server .
 docker run -p 3000:3000 server
 ```
-## TESTS FOR THE SERVER
+
 # TESTS
+## UNIT TESTS
 To run the unit tests, use the following command :
 ```sh
 yarn test
 ```
 This will the conversion to the roman numerals.
+
+## TESTING THE SERVER
+Use the following cURL command to test the API response.
+```sh
+curl -X GET \
+  'http://localhost:3000/convert-to-roman-numbers?number_to_convert=16'
+```
+This should return an object containing the result of the conversion.

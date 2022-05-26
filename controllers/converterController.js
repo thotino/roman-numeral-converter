@@ -6,7 +6,9 @@ const service = require('../services/convertToRomanNumerals')
  * @param {*} res - The Express result object
  */
 const controller = (req, res) => {
-  res.send({ result: service.convertToRomanNumerals({ number: req.query.number_to_convert }) })
+  const { number_to_convert: numberToConvert } = req.query
+  if (!numberToConvert) throw new Error('ERR_NO_NUMBER_PROVIDED')
+  res.send({ result: service.convertToRomanNumerals({ number: numberToConvert }) })
 }
 
 module.exports = {
