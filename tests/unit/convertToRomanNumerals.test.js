@@ -8,8 +8,4 @@ describe('[unit] convertToRomanNumerals service test', () => {
     expect(service.convertToRomanNumerals({ number: 9 })).toEqual('IX')
     expect(service.convertToRomanNumerals({ number: 99 })).toEqual('XCIX')
   })
-  test('Should convert more numbers', async () => {
-    expect(service.convertToRomanNumerals({ number: 999 })).toEqual('CMXCIX')
-    expect(service.convertToRomanNumerals({ number: 9999 })).toEqual('MMMMMMMMMCMXCIX')
-  })
 })
