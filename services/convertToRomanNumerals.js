@@ -2,10 +2,6 @@
  * A map that associate the numbers with the roman symbols
  */
 const conversionMap = new Map([
-  [1000, 'M'],
-  [900, 'CM'],
-  [500, 'D'],
-  [400, 'CD'],
   [100, 'C'],
   [90, 'XC'],
   [50, 'L'],
